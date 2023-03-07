@@ -19,3 +19,4 @@ This repository implements ["Rate-Rendering Distortion Optimized Preprocessing f
   + Pytorch 
   + Nvdiffrast
   + tqdm
+  + CompressAI
