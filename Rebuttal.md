@@ -29,23 +29,23 @@ As reviewers say, our method is designed with a simple architecture that is easy
 ## Author did not focus on compression performance by showing the optimization results first in the experimental results section.(R1)
 We agree to restructure the experimental results section in a logical manner. Firstly, we will provide a compression performance (bitrate and rendering quality), followed by an exploration of optimized texture maps to support the improvement in texture map compression performance achieved by our method.
 
-## Differences between images in Fig.9 (subjective quality comparison) are not imperceptible.(R4)
+## 1.Differences between images in Fig.9 (subjective quality comparison) are not imperceptible.(R4)
 We will modify it to detect more distinct differences through highlights or partial magnification.
 
-## Additional introduction of related studies.
+## 2.Additional introduction of related studies.
 We agree to add an introduction to GPU-supported compression and texture map optimization methods for it, clarifying that our method aims to improve texture map compression efficiency on video codecs. We will also briefly mention the similarities between texture map padding and inpainting methods, emphasizing that inpainting is not carried out with compression in mind. To keep the related works section concise, we will revise it accordingly.
 
-## Redundancy of sentences and other matters
+## 3.Redundancy of sentences and other matters
 To improve readability and eliminate redundancy in our paper, we will revise sentences that overlap and shorten its length. Additionally, we will provide a brief explanation of the BD-rate calculation and the implementation framework used.
 
 # 8. Technical issues
-## Another material compression(R2)
+## 1.Another material compression(R2)
 Our method takes reconstructed mesh and multiview image inputs. Extracting non-RGB materials requires sophisticated inverse rendering, which we lack expertise in. Thus, creating and compressing a texture map with other materials is challenging. Nevertheless, we expect our method to aid in compressing diverse texture maps, making it a worthwhile topic for future research.
 
-## Large Multiview dataset(R5)
+## 2.Large Multiview dataset(R5)
 Our target content is room-scale or objects captured with a camera array like MPEG-I. While we haven't focused on large datasets, we believe selecting representative viewpoints from them for R-RD optimization is a compelling extension. Nonetheless, we acknowledge the limitations of our method and will comment on the revised paper.
 
-## Rate control problem(R1)
+## 3.Rate control problem(R1)
 In this paper, R-RD optimization was performed using a fixed lambda value regardless of the coding configuration. However, to improve the compression efficiency and flexibility of the proposed method, parameters like lambda should be set adaptively for the target bitrate. While this would enhance the quality of our research, rate control is a complex research area. Hence, we acknowledge this limitation in our study and will mention it as an area of future research to address.
 
 # 9.Closing
