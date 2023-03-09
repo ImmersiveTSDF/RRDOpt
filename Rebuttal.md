@@ -26,16 +26,16 @@ Although we conducted experiments with a total of 12 texture maps by performing 
 As reviewers say, our method is designed with a simple architecture that is easy to implement and therefore easy to reproduce. For the convenience of readers and researchers, we will release the source code of the proposed method through GitHub (include url in the paper).
 
 # 7.Revision of the paper
-## Author did not focus on compression performance by showing the optimization results first in the experimental results section.(R1)
+## 1.Author did not focus on compression performance by showing the optimization results first in the experimental results section.(R1)
 We agree to restructure the experimental results section in a logical manner. Firstly, we will provide a compression performance (bitrate and rendering quality), followed by an exploration of optimized texture maps to support the improvement in texture map compression performance achieved by our method.
 
-## 1.Differences between images in Fig.9 (subjective quality comparison) are not imperceptible.(R4)
+## 2.Differences between images in Fig.9 (subjective quality comparison) are not imperceptible.(R4)
 We will modify it to detect more distinct differences through highlights or partial magnification.
 
-## 2.Additional introduction of related studies.
+## 3.Additional introduction of related studies.
 We agree to add an introduction to GPU-supported compression and texture map optimization methods for it, clarifying that our method aims to improve texture map compression efficiency on video codecs. We will also briefly mention the similarities between texture map padding and inpainting methods, emphasizing that inpainting is not carried out with compression in mind. To keep the related works section concise, we will revise it accordingly.
 
-## 3.Redundancy of sentences and other matters
+## 4.Redundancy of sentences and other matters
 To improve readability and eliminate redundancy in our paper, we will revise sentences that overlap and shorten its length. Additionally, we will provide a brief explanation of the BD-rate calculation and the implementation framework used.
 
 # 8. Technical issues
